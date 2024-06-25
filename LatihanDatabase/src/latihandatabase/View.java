@@ -43,6 +43,19 @@ public class View {
         } else {
             System.out.println("Insert Gagal");
         }
+        
+        User newUser2 = new User();
+        newUser2.setName("Joel");
+        newUser2.setAddress("Jalan Kenari");
+        newUser2.setAge(90);
+        newUser2.setPhone("085345329834");
+        
+        boolean status2 = controller.insertNewUser(newUser2);
+        if(status2) {
+            System.out.println("Insert Sukses");
+        } else {
+            System.out.println("Insert Gagal");
+        }
     }
     
     public static void main(String[] args) {
